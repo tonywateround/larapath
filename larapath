@@ -35,7 +35,7 @@ then
 
 echo -n "Please type the full path of your Laravel app (where you can find your .env...)"
 read -r larapath_prompt
-echo "export LARAPATH_DIR=$larapath_prompt " > .larapath
+echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
 
 
 elif [[ $1 = '--help' ]] || [[ $1 = '-h' ]]
@@ -49,10 +49,10 @@ echo ""
 echo "--root            -r        Access to root project folder"
 echo "--controllers     -ct       Access to Controllers folder"
 echo "--views           -vw       Access to Views folder"
-echo "--routes          -rt       Access to Routes folder\n"
-echo "--path            -p        Change LaraPath Laravel folder\n"
+echo "--routes          -rt       Access to Routes folder"
+echo "--path            -p        Change LaraPath Laravel folder"
 
 else 
-echo "You need to type an action (-h for help)"
+echo "You need an option (-h for help)"
 fi
 fi
