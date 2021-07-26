@@ -7,5 +7,5 @@
 4. Execute `$ larapath --help` for a list of options.
 
 # Uninstall Larapath
-1. `$ rm /usr/local/bin/larapath && ~/.larapath`
+1. `$ sudo rm /usr/local/bin/larapath && ~/.larapath`
 
