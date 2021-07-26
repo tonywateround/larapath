@@ -6,3 +6,4 @@ chmod +x /usr/local/bin/larapath
 echo "" > ~/.larapath
 echo "Larapath has been installed successfully."
 echo "You can run $larapath -h or --help for list of available commands"
+rm install_larapath.sh
