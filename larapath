@@ -4,9 +4,9 @@ source ~/.larapath
 if [[ $LARAPATH_DIR = "" ]]
 then
 
-echo "Please type the full path of your Laravel app (where you can find your .env of your Laravel project)\n\n"
-echo "Example: ~HOME/desktop/myLaravelApp\n\n"
-read larapath_prompt
+echo "Please type the full path of your Laravel app (where you can find your .env of your Laravel project)"
+echo "Example: ~HOME/desktop/myLaravelApp"
+read -p larapath_prompt
 echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
 
 else
