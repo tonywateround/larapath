@@ -1,3 +1,3 @@
-# Larapath - Simple CLI tool for fast folder access in Laravel 8
+# Larapath - Simple tool for fast Laravel access
 
 # Install on MacOS
