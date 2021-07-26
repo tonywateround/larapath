@@ -1,7 +1,6 @@
-#!bin/bash
+#!/bin/bash
 
-
-curl -L https://github.com/tonywateround/larapath/raw/main/larapath
+curl https://github.com/tonywateround/larapath/raw/main/larapath --output larapath
 mv larapath /usr/local/bin
 chmod +x /usr/local/bin/larapath
 echo "Larapath has been installed successfully."
