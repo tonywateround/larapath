@@ -6,7 +6,7 @@ then
 
 echo -n "Please type the full path of your Laravel app (where you can find your .env...)"
 read -r larapath_prompt
-echo "export LARAPATH_DIR=$larapath_prompt " > .larapath
+echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
 
 else
 if [[ $1 = '--controllers' ]] || [[ $1 = '-ct' ]]
