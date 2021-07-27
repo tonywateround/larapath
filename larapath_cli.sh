@@ -20,30 +20,22 @@ else
 if [[ $1 = '--controllers' ]] || [[ $1 = '-ct' ]]
 then
 
-
-function myprog() {
-   cd $LARAPATH_DIR/app/Http/Controllers
-}
-
-myprog
+cd $LARAPATH_DIR/app/Http/Controllers
 
 elif [[ $1 = '--root' ]] || [[ $1 = '-r' ]]
 then
 
-function myprog() {
-   cd $LARAPATH_DIR
-}
-
-myprog
+cd $LARAPATH_DIR
+   
 elif [[ $1 = '--views' ]] || [[ $1 = '-vw' ]]
 then
 
-cd "$LARAPATH_DIR/resources/views"
+cd $LARAPATH_DIR/resources/views
 
 elif [[ $1 = '--routes' ]] || [[ $1 = '-rt' ]]
 then
 
-cd "$LARAPATH_DIR/routes"
+cd $LARAPATH_DIR/routes
 
 elif [[ $1 = '--path' ]] || [[ $1 = '-p' ]]
 then
