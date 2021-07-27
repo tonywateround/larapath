@@ -47,15 +47,18 @@ echo "Press $(tput setaf 6)Enter... $(tput sgr 0)to use current directory\n"
 echo "Currently set to: $(tput setaf 2) $LARAPATH_DIR $(tput sgr 0)\n"
 read -r larapath_prompt
 
+
+if [ ${#larapath_prompt} -eq 0 ]; then
+  larapath_prompt=$(pwd)
+fi
+
 if [[ $larapath_prompt = '' ]]
 then
 echo "You should set a valid Laravel project path"
 read -r larapath_prompt
 else
 
-if [ ${#larapath_prompt} -eq 0 ]; then
-  larapath_prompt=$(pwd)
-fi
+
 
 echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
 source ~/.larapath
