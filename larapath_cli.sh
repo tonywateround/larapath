@@ -96,6 +96,7 @@ echo "$(tput setaf 1)Uninstalling Larapath...$(tput sgr 0)"
 sed -i.bak '/larapath/d' ~/.bashrc
 sudo rm /usr/local/bin/larapath_cli ~/.larapath
 echo "$(tput setaf 1)✓ Larapath has been uninstalled...$(tput sgr 0)"
+source ~/.bashrc
 
 else 
 echo "Bad option. Execute $(tput setaf 6)larapath --help$(tput sgr 0) for list of available options"
