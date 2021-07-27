@@ -1,6 +1,5 @@
 #!/bin/sh
 source ~/.larapath
-alias proj="cd /home/tree/projects/java"
 
 if [[ $LARAPATH_DIR = "" ]]
 then
@@ -22,13 +21,13 @@ else
 if [[ $1 = '--controllers' ]] || [[ $1 = '-ct' ]]
 then
 
-. proj $LARAPATH_DIR/app/Http/Controllers
+cd $LARAPATH_DIR/app/Http/Controllers
 
 
 elif [[ $1 = '--root' ]] || [[ $1 = '-r' ]]
 then
 
-. proj $LARAPATH_DIR
+cd $LARAPATH_DIR
 echo $LARAPATH_DIR
 
 elif [[ $1 = '--views' ]] || [[ $1 = '-vw' ]]
