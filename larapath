@@ -4,8 +4,8 @@ source ~/.larapath
 if [[ $LARAPATH_DIR = "" ]]
 then
 
-echo 'Please type the full path of your tput setaf 1; Laravel tput setaf 0; app\n'
-echo 'Example: tput setaf 1; $HOME/desktop/myLaravelApp\ntput setaf 0;'
+echo 'Please type the full path of your $(tput setaf 1)Laravel $(tput sgr 0)app\n'
+echo 'Example: $(tput setaf 1)$HOME/desktop/myLaravelApp\n $(tput sgr 0)'
 read -r larapath_prompt
 echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
 
