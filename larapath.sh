@@ -1,7 +1,7 @@
 #!/bin/sh
 source ~/.larapath
 
-alias proj="cd"
+alias proj=cd
 
 
 if [[ $LARAPATH_DIR = "" ]]
