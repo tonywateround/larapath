@@ -22,7 +22,7 @@ else
 if [[ $1 = '--controllers' ]] || [[ $1 = '-ct' ]]
 then
 
-. proj $LARAPATH_DIR/app/Http/Controllers"
+. proj $LARAPATH_DIR/app/Http/Controllers
 
 
 elif [[ $1 = '--root' ]] || [[ $1 = '-r' ]]
