@@ -45,7 +45,7 @@ then
 
 echo ""
 echo "$(tput setaf 6)LaraPath - Fast CLI access to Laravel folder$(tput sgr 0)"
-echo "Current project path: $(tput setaf 6)" $LARAPATH_DIR
+echo "Current project path: $(tput setaf 2)" $LARAPATH_DIR
 echo "$(tput sgr 0)\n"
 echo "Usage: larapath $(tput setaf 2)[options]$(tput sgr 0)\n\n"
 echo "$(tput setaf 2)--root            -r        $(tput sgr 0)Access to root project folder"
@@ -55,6 +55,6 @@ echo "$(tput setaf 2)--routes          -rt       $(tput sgr 0)Access to Routes f
 echo "$(tput setaf 2)--path            -p        $(tput sgr 0)Change LaraPath Laravel folder"
 
 else 
-echo "Bad option ($(tput setaf 6)larapath --help$(tput sgr 0) for list of options)"
+echo "Bad option. Execute $(tput setaf 6)larapath --help$(tput sgr 0) for list of available options"
 fi
 fi
