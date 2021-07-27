@@ -83,7 +83,19 @@ echo "$(tput setaf 2)--root            -r        $(tput sgr 0)Access to root pro
 echo "$(tput setaf 2)--controllers     -ct       $(tput sgr 0)Access to Controllers folder"
 echo "$(tput setaf 2)--views           -vw       $(tput sgr 0)Access to Views folder"
 echo "$(tput setaf 2)--routes          -rt       $(tput sgr 0)Access to Routes folder"
-echo "$(tput setaf 2)--path            -p        $(tput sgr 0)Change LaraPath Laravel folder"
+echo "$(tput setaf 2)--path            -p        $(tput sgr 0)Change LaraPath Laravel folder\n"
+echo "$(tput setaf 1)--uninstall                 $(tput sgr 0)Uninstalling Larapath"
+
+
+
+elif [[ $1 = '--uninstall' ]]
+then
+
+echo ""
+echo "$(tput setaf 1)Uninstalling Larapath...$(tput sgr 0)"
+sed -i.bak '/larapath/d' ~/.bashrc
+sudo rm /usr/local/bin/larapath_cli ~/.larapath
+echo "$(tput setaf 1)✓ Larapath has been uninstalled...$(tput sgr 0)"
 
 else 
 echo "Bad option. Execute $(tput setaf 6)larapath --help$(tput sgr 0) for list of available options"
