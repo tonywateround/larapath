@@ -10,7 +10,7 @@ You should use at your own risk.
 3. Execute `$ larapath --help` for a list of options.
 
 ### Uninstall on Unix-based system
-1. `sudo rm /usr/local/bin/larapath ~/.larapath`
+1. `$ sudo rm /usr/local/bin/larapath ~/.larapath`
 
 
 
