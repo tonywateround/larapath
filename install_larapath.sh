@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 curl https://raw.githubusercontent.com/tonywateround/larapath/main/larapath --output larapath
 mv larapath /usr/local/bin
