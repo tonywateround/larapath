@@ -10,7 +10,7 @@ read -r larapath_prompt
 
 
 if [ ${#larapath_prompt} -eq 0 ]; then
-  echo pwd
+  pwd
 fi
 
 echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
@@ -52,7 +52,7 @@ read -r larapath_prompt
 else
 
 if [ ${#larapath_prompt} -eq 0 ]; then
-  echo pwd
+  pwd
 fi
 
 echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
