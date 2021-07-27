@@ -39,8 +39,15 @@ echo "Example: $(tput setaf 6)\$HOME/desktop/myLaravelApp $(tput sgr 0)\n"
 echo "Currently set to: $(tput setaf 2)" $LARAPATH_DIR
 echo "$(tput sgr 0)\n"
 read -r larapath_prompt
-echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
 
+if [[ $larapath_prompt = '' ]]
+then
+echo "You should set a valid Laravel project path"
+read -r larapath_prompt
+else
+echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
+source ~/.larapath
+fi
 
 elif [[ $1 = '--help' ]] || [[ $1 = '-h' ]]
 then
