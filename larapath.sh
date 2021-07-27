@@ -11,7 +11,7 @@ read -r larapath_prompt
 
 
 if [ ${#larapath_prompt} -eq 0 ]; then
-  pwd
+  larapath_prompt=pwd
 fi
 
 echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
@@ -43,7 +43,7 @@ then
 
 echo "Please type the full path of your $(tput setaf 6)Laravel $(tput sgr 0)app"
 echo "Example: $(tput setaf 6)\$HOME/desktop/myLaravelApp $(tput sgr 0)"
-echo "Press $(tput setaf 6)Enter... $(tput sgr 0)to use current directory"
+echo "Press $(tput setaf 6)Enter... $(tput sgr 0)to use current directory\n"
 echo "Currently set to: $(tput setaf 2) $LARAPATH_DIR $(tput sgr 0)\n"
 read -r larapath_prompt
 
@@ -54,7 +54,7 @@ read -r larapath_prompt
 else
 
 if [ ${#larapath_prompt} -eq 0 ]; then
-  pwd
+  larapath_prompt=pwd
 fi
 
 echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
@@ -67,8 +67,8 @@ then
 echo ""
 echo "$(tput setaf 6)LaraPath - Fast CLI access to Laravel folder$(tput sgr 0)"
 echo "Current project path: $(tput setaf 2)" $LARAPATH_DIR
-echo "$(tput sgr 0)\n"
-echo "Usage: larapath $(tput setaf 2)[options]$(tput sgr 0)\n\n"
+echo "$(tput sgr 0)"
+echo "Usage: larapath $(tput setaf 2)[options]$(tput sgr 0)\n"
 echo "$(tput setaf 2)--root            -r        $(tput sgr 0)Access to root project folder"
 echo "$(tput setaf 2)--controllers     -ct       $(tput sgr 0)Access to Controllers folder"
 echo "$(tput setaf 2)--views           -vw       $(tput sgr 0)Access to Views folder"
