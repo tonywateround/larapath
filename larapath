@@ -4,8 +4,8 @@ source ~/.larapath
 if [[ $LARAPATH_DIR = "" ]]
 then
 
-echo 'Please type the full path of your Laravel app (where you can find your .env of your Laravel project)'
-echo 'Example: ~$HOME/desktop/myLaravelApp\n\n'
+echo 'Please type the full path of your Laravel app\n'
+echo 'Example: $HOME/desktop/myLaravelApp\n'
 read -r larapath_prompt
 echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
 
@@ -34,8 +34,8 @@ cd $LARAPATH_DIR/routes
 elif [[ $1 = '--path' ]] || [[ $1 = '-p' ]]
 then
 
-echo 'Please type the full path of your Laravel app (where you can find your .env of your Laravel project)'
-echo 'Example: ~$HOME/desktop/myLaravelApp\n\n'
+echo 'Please type the full path of your Laravel app\n'
+echo 'Example: $HOME/desktop/myLaravelApp\n'
 read -r larapath_prompt
 echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
 
