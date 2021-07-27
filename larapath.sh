@@ -13,7 +13,7 @@ read -r larapath_prompt
 if [ ${#larapath_prompt} -eq 0 ]; then
   larapath_prompt=$(pwd)
 fi
-
+echo "$(tput setaf 2)✓ Larapath is now set to Laravel path $(tput setaf 6)$larapath_prompt $(tput sgr 0)"
 echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
 
 else
@@ -59,7 +59,7 @@ read -r larapath_prompt
 else
 
 
-
+echo "$(tput setaf 2)✓ Larapath is now set to Laravel path $(tput setaf 6)$larapath_prompt $(tput sgr 0)"
 echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
 source ~/.larapath
 fi
