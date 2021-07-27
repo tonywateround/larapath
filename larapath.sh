@@ -5,7 +5,8 @@ if [[ $LARAPATH_DIR = "" ]]
 then
 
 echo "Please type the full path of your $(tput setaf 6)Laravel $(tput sgr 0)app"
-echo "Example: $(tput setaf 6)\$HOME/desktop/myLaravelApp $(tput sgr 0)\n"
+echo "Example: $(tput setaf 6)\$HOME/desktop/myLaravelApp $(tput sgr 0)"
+echo "Press $(tput setaf 6)Enter... $(tput sgr 0)to use current directory\n"
 read -r larapath_prompt
 
 
@@ -42,7 +43,8 @@ then
 
 echo "Please type the full path of your $(tput setaf 6)Laravel $(tput sgr 0)app"
 echo "Example: $(tput setaf 6)\$HOME/desktop/myLaravelApp $(tput sgr 0)"
-echo "Currently set to: $(tput setaf 2) $LARAPATH_DIR $(tput sgr 0)"
+echo "Press $(tput setaf 6)Enter... $(tput sgr 0)to use current directory"
+echo "Currently set to: $(tput setaf 2) $LARAPATH_DIR $(tput sgr 0)\n"
 read -r larapath_prompt
 
 if [[ $larapath_prompt = '' ]]
