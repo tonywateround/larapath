@@ -13,7 +13,7 @@ if [ ${#larapath_prompt} -eq 0 ]; then
   larapath_prompt=$(pwd)
 fi
 echo "$(tput setaf 2)✓ Larapath is now set to Laravel path $(tput setaf 6)$larapath_prompt $(tput sgr 0)"
-echo  "export LARAPATH_DIR=$larapath_prompt\nalias larapath='. /usr/local/bin/larapath_dot'" > ~/.larapath
+echo  "export LARAPATH_DIR=$larapath_prompt\nalias larapath='. /usr/local/bin/larapath_cli'" > ~/.larapath
 source ~/.larapath
 
 else
@@ -68,7 +68,7 @@ else
 
 echo "$(tput setaf 2)✓ Larapath is now set to Laravel path $(tput setaf 6)$larapath_prompt $(tput sgr 0)"
 #echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
-echo "export LARAPATH_DIR=$larapath_prompt\nalias larapath='. /usr/local/bin/larapath_dot'" > ~/.larapath
+echo "export LARAPATH_DIR=$larapath_prompt\nalias larapath='. /usr/local/bin/larapath_cli'" > ~/.larapath
 source ~/.larapath
 fi
 
