@@ -1,6 +1,6 @@
 #!/bin/sh
 
-curl https://raw.githubusercontent.com/tonywateround/larapath/main/larapath --output larapath
+curl https://raw.githubusercontent.com/tonywateround/larapath/main/larapath.sh --output larapath
 mv larapath /usr/local/bin
 chmod +x /usr/local/bin/larapath
 echo "" > ~/.larapath
