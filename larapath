@@ -44,8 +44,7 @@ elif [[ $1 = '--help' ]] || [[ $1 = '-h' ]]
 then
 
 echo ""
-echo "$(tput setaf 3)LaraPath$(tput sgr 0) - Fast CLI access to Laravel folder"
-echo "Author: Tony Wateround"
+echo "$(tput setaf 6)LaraPath - Fast CLI access to Laravel folder$(tput sgr 0)"
 echo "Current project path: $(tput setaf 6)" $LARAPATH_DIR
 echo "$(tput sgr 0)\n"
 echo "Usage: larapath $(tput setaf 2)[options]$(tput sgr 0)\n\n"
