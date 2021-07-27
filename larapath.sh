@@ -20,23 +20,23 @@ else
 if [[ $1 = '--controllers' ]] || [[ $1 = '-ct' ]]
 then
 
-cd $LARAPATH_DIR/app/http/controllers
+cd "$LARAPATH_DIR/app/http/controllers"
 
 
 elif [[ $1 = '--root' ]] || [[ $1 = '-r' ]]
 then
 
-cd $LARAPATH_DIR
+cd "$LARAPATH_DIR"
 
 elif [[ $1 = '--views' ]] || [[ $1 = '-vw' ]]
 then
 
-cd $LARAPATH_DIR/resources/views
+cd "$LARAPATH_DIR/resources/views"
 
 elif [[ $1 = '--routes' ]] || [[ $1 = '-rt' ]]
 then
 
-cd $LARAPATH_DIR/routes
+cd "$LARAPATH_DIR/routes"
 
 elif [[ $1 = '--path' ]] || [[ $1 = '-p' ]]
 then
