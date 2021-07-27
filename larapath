@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 source ~/.larapath
 
 if [[ $LARAPATH_DIR = "" ]]
