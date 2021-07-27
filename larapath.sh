@@ -7,6 +7,12 @@ then
 echo "Please type the full path of your $(tput setaf 6)Laravel $(tput sgr 0)app"
 echo "Example: $(tput setaf 6)\$HOME/desktop/myLaravelApp $(tput sgr 0)\n"
 read -r larapath_prompt
+
+
+if [ ${#larapath_prompt} -eq 0 ]; then
+  echo pwd
+fi
+
 echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
 
 else
@@ -36,8 +42,7 @@ then
 
 echo "Please type the full path of your $(tput setaf 6)Laravel $(tput sgr 0)app"
 echo "Example: $(tput setaf 6)\$HOME/desktop/myLaravelApp $(tput sgr 0)"
-echo "Currently set to: $(tput setaf 2)" $LARAPATH_DIR
-echo "$(tput sgr 0)"
+echo "Currently set to: $(tput setaf 2) $LARAPATH_DIR $(tput sgr 0)"
 read -r larapath_prompt
 
 if [[ $larapath_prompt = '' ]]
@@ -45,6 +50,11 @@ then
 echo "You should set a valid Laravel project path"
 read -r larapath_prompt
 else
+
+if [ ${#larapath_prompt} -eq 0 ]; then
+  echo pwd
+fi
+
 echo "export LARAPATH_DIR=$larapath_prompt " > ~/.larapath
 source ~/.larapath
 fi
