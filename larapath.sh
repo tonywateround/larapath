@@ -1,9 +1,6 @@
 #!/bin/sh
 source ~/.larapath
 
-alias proj=cd
-
-
 if [[ $LARAPATH_DIR = "" ]]
 then
 
