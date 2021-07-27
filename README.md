@@ -7,11 +7,12 @@ You should use at your own risk.
 ### Install on Unix-based system
 1. `$ curl https://raw.githubusercontent.com/tonywateround/larapath/main/install_larapath.sh --output install_larapath.sh `
 2. `$ chmod +x install_larapath.sh && ./install_larapath.sh`
-3. Execute `$ larapath --help` for a list of options.
+3. `$ source ~/.bashrc` or reload terminal.
+4. Execute `$ larapath --help` for a list of options.
 
 ### Uninstall on Unix-based system
 1. `$ sudo rm /usr/local/bin/larapath_cli ~/.larapath`
-2. `$ sed -i.bak '/larapath/d' ~/.bashrc` //Remove the line containing larapath in your environment file
+2. `$ sed -i.bak '/larapath/d' ~/.bashrc` //Remove the line containing larapath in your environment file.
 
 
 
