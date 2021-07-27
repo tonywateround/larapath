@@ -1,4 +1,4 @@
-## Larapath - Simple tool for fast Laravel folder access
+## Larapath - Simple tool for fast Laravel directory access
 I often directly use terminal for small modifications in my Laravel project and i was bored to cd'ing (to many time) in Controllers, go to Views, then Models and come back to root folder to migrate and so on.
 So i've made this simple CLI tools for my own purpose and can be usefull for some people. 
 This little tiny "project" is not maintened nor updated. 
