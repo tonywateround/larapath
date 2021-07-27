@@ -7,7 +7,7 @@ You should use at your own risk.
 ### Install on Unix-based system
 1. `$ curl https://raw.githubusercontent.com/tonywateround/larapath/main/install_larapath.sh --output install_larapath.sh `
 2. `$ chmod +x install_larapath.sh && ./install_larapath.sh`
-3. `source ~/.larapath`  //Sourcing config data file to use alias as workarround to bypass CD cmd terminal restriction.
+3. Add `alias larapath='. /usr/local/bin/larapath_cli'`  to your environment variable to use alias as workarround to bypass CD cmd terminal restriction.
 4. Execute `$ larapath --help` for a list of options.
 
 ### Uninstall on Unix-based system
